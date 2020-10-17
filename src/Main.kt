@@ -53,4 +53,39 @@ fun main() {
     val yearNow = 2018
     val message2 = "$name is ${yearNow - yearOfBirth} years old"
     println(message2)
+
+    /**
+     * --------------------------- CONDITIONS ------------------------------------
+     */
+
+    val age = 42
+    if (age < 10) {
+        println("10")
+    } else if (age < 20) {
+        println(20)
+    } else {
+        println(30)
+    }
+
+    if (age < 10)
+        println("You're too young to watch this movie")
+        println("You should go home") // Mistake - this is not a part of the if body!
+
+    val res = if (age < 50) 50 else 100
+
+    var a = 10
+    val b = 10
+
+    if (a === b)
+        println("same")
+    else println("not same")
+
+    println(res)
+
+    when(age) {
+        0 -> println("ZERO")
+        in 1..9 -> println("single digit")
+        else -> println("multiple digits")
+    }
+
 }
